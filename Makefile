@@ -35,6 +35,9 @@ package:
 	-@rm "$(RELEASE_ZIP)" 2>/dev/null || true
 	@mkdir -p "$(TEMP_PATH)"
 
+	# Generate package-lock.json
+	@npm i --package-lock-only
+
 	# Copy sources to temporary folder
 	@cp -R src package-lock.json package.json "$(TEMP_PATH)/"
 

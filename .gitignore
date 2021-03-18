@@ -5,3 +5,4 @@ sample-data
 .idea/*
 *.env
 release.zip
+package-lock.json
